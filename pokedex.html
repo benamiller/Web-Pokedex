@@ -1,0 +1,91 @@
+<html>
+<head>
+	<meta charset="UTF8">
+    <title>HactuallyPokedex</title>
+    <link rel="icon" href="turtwig_icon.png">
+    <link href="pokestyle.css" type="text/css" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <script src="pokescript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+</head>
+<body>
+<br>
+<div class="head"><h2>Welcome to HactuallyBenjis's Pokedex!</h2></div>
+<div class="content">
+    
+    <div class="input">
+        <div class="header">
+
+        <h4>This is the greatest place to get your Pokemon info!</h4>
+        </div>
+
+        (If you're struggling to think of any of these beautiful creatures, 
+        <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number" target="_blank">here</a>
+    is a list of all of them).
+        <br>
+        <br>
+        <div class="container">
+            <div class="item">Enter the name of any Pokemon (any capitalization) and then click "submit"! 
+                <br>
+                <br>
+                
+                <input type="text" id="pokemonNameInput" placeholder=" 'e.g.' Pikachu"
+                                                                            onfocus="this.placeholder=''"
+                                                                            onblur="this.placeholder=' \'e.g.\' Pikachu'"></div>
+            <br>
+
+            <div class="item"><button onclick="submit()">Submit</button></div>
+        </div>
+    </div>
+
+    <br><br>
+
+
+    
+    <div id="output">
+        
+        <div class="title"><h2>This is <span id="resultPokemonName"></span>!</h2></div>
+
+        <div class="subTitle">
+            <img id="pokemonImg">
+            <img id="pokemonImg2">
+        <br>    
+            <br>
+            <div class="title">What a lovely pokemon you've chosen!</div>
+
+        <br></div>
+    
+        
+    <div id="outputTable">
+    
+        <table>
+
+            <!--<tr><td>This is <span id="resultPokemonName"></span>!</td><td id="resultPokemon"></td></tr>
+            <tr><td><img id="pokemonImg"></td><td></td></tr>
+            <tr><td>What a lovely pokemon you've chosen!</td><td></td></tr>
+            <tr><td id="pokemonTitle"><span id="resultPokemonName2"></span> has some great abilities:</td><td></td></tr>-->
+            <tr><td id></td><td></td></tr>
+            <tr><td id="heightTitle">Height</td><td id="weightTitle">Weight</td></tr>
+            <tr><td id="pokemonHeight"></td><td id="pokemonWeight"></td></tr>
+            <tr><td id="typeTitle">Type</td><td id="abilitiesTitle">Abilities</td></tr>
+            <tr><td colspan="1" id="pokemonType"></td><td id="pokemonAbilities"></td></tr>
+
+
+        </table>
+    </div>
+
+
+    <div id="raw">
+    </div>
+
+
+    </div>
+</div>
+    <br>
+    <br>
+
+</body>
+</html>
+
